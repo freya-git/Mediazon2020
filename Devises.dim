@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b1e1f026-cddd-43e0-90a1-94bb56a89385" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="800e5318-8ff0-4f11-9c37-c4f355996ca4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Devises</ID>
   <Name>Devises</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,34 +68,36 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5a1f7028-0ad5-45a6-977f-f4c35b63924d">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="845669f6-9202-41fa-bfc7-108cf262e6ce">
     <DataSourceViewID>Mediazon DWH</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="61fe7e04-a3c9-497d-901c-c9c64dd25846">
+  <Type>Currency</Type>
+  <ErrorConfiguration dwd:design-time-name="32948e91-3221-4fed-9564-c81486233557">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="47fff676-c036-449b-a6af-64959ad61839">
+    <Attribute dwd:design-time-name="ea7f0bd5-36f6-46e6-a4dc-ff3afc932438">
       <ID>Id</ID>
       <Name>Nom</Name>
+      <Type>CurrencyName</Type>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="faf06046-25f1-45d5-a225-86e0e4099ce3">
+        <KeyColumn dwd:design-time-name="d1027541-2ce1-4f22-90f9-8c3523c98af1">
           <DataType>WChar</DataType>
           <DataSize>3</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c4e3098-412a-4060-997b-b810275dd5a6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de269129-6bf2-46ee-a734-9c18f27aaf9f">
             <TableID>dbo_DimDevises</TableID>
             <ColumnID>id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="fda3e450-30a0-489c-b9c1-8a447bcf6cfe">
+      <NameColumn dwd:design-time-name="86ed944d-2a21-4e1e-9490-cdc215e1a5f4">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="2da175f1-05e7-43f2-ace0-23ab488d9f9c">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="02745769-f28b-45e2-90df-933bd3534af4">
           <TableID>dbo_DimDevises</TableID>
           <ColumnID>name</ColumnID>
         </Source>
